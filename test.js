@@ -2,4 +2,4 @@ secret=thesecretkey
 
 
 
-aw
+aws=key

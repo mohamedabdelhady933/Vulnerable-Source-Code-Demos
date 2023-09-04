@@ -1,5 +1,0 @@
-secret=thesecretkey
-
-
-
-aws=key

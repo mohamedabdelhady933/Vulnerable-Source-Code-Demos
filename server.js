@@ -6,7 +6,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 const app = express();
 app.use(bodyParser.json());
 
-const uri = "mongodb+srv://xTheMo:JustForFun@121314@vulnctf.y7if0h1.mongodb.net/vulnctf?retryWrites=true&w=majority&appName=vulnCTF";
+const uri = "mongodb+srv://xTheMo:JustForFun@121314@vulnctf.y7if0h1.mongodb.net/VulnCTF?retryWrites=true&w=majority&appName=vulnCTF";
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -17,9 +17,9 @@ const client = new MongoClient(uri, {
 
 let usersCollection = null;
 let inMemoryUsers = [
-  { username: 'alice', password: 'alicegffdfjjjuyfdccpw', role: 'user' },
-  { username: 'bob', password: 'bobprddcccxxxw', role: 'user' },
-  { username: 'admin', password: 'admighuuhfxxiiutfddssnpw', role: 'admin' }
+  { username: 'alice', password: 'alicepw', role: 'user' },
+  { username: 'bob', password: 'bobpw', role: 'user' },
+  { username: 'admin', password: 'adminpw', role: 'admin' }
 ];
 
 async function connectDb() {

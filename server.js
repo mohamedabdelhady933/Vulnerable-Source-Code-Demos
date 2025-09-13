@@ -12,7 +12,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Change if you run MongoDB on a different URI. If not available, the server will fallback to an in-memory array.
-const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://xTheMo:JustForFun@121314@vulnctf.y7if0h1.mongodb.net/';
+const MONGO_URI = 'mongodb+srv://xTheMo:JustForFun@121314@vulnctf.y7if0h1.mongodb.net/?retryWrites=true&w=majority&appName=vulnCTF';
 const DB_NAME = 'vulnCTF';
 
 let usersCollection = null;

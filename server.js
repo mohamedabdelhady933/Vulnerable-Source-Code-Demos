@@ -17,16 +17,16 @@ const client = new MongoClient(uri, {
 
 let usersCollection = null;
 let inMemoryUsers = [
-  { username: 'alice', password: 'alicepw', role: 'user' },
-  { username: 'bob', password: 'bobpw', role: 'user' },
-  { username: 'admin', password: 'adminpw', role: 'admin' }
+  { username: 'alice', password: 'alicegffdfjjjuyfdccpw', role: 'user' },
+  { username: 'bob', password: 'bobprddcccxxxw', role: 'user' },
+  { username: 'admin', password: 'admighuuhfxxiiutfddssnpw', role: 'admin' }
 ];
 
 async function connectDb() {
   try {
     await client.connect();
     console.log('MongoDB connected');
-    const db = client.db('vulnctf');
+    const db = client.db('VulnCTF');
     usersCollection = db.collection('users');
 
     const count = await usersCollection.countDocuments();

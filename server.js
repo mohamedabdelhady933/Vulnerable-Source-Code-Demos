@@ -12,14 +12,14 @@ const app = express();
 app.use(bodyParser.json());
 
 // Change if you run MongoDB on a different URI. If not available, the server will fallback to an in-memory array.
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017';
-const DB_NAME = 'vuln_ctf_db';
+const MONGO_URI = process.env.MONGO_URI || 'mongodb+srv://xTheMo:JustForFun@121314@vulnctf.y7if0h1.mongodb.net/';
+const DB_NAME = 'vulnCTF';
 
 let usersCollection = null;
 let inMemoryUsers = [
-  { username: 'alice', password: 'alicepw', role: 'user' },
-  { username: 'bob', password: 'bobpw', role: 'user' },
-  { username: 'admin', password: 'adminpw', role: 'admin' }
+  { username: 'alice', password: 'alicuuhgggghjggghhhhepw', role: 'user' },
+  { username: 'bob', password: 'bobpyyyggffffddddfhuw', role: 'user' },
+  { username: 'admin', password: 'admiyygfguiiigfffnpw', role: 'admin' }
 ];
 
 async function connectDb() {
